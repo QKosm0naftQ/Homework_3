@@ -9,7 +9,7 @@ namespace _5.WPF_Client
 {
     public class ChatMessage
     {
-        public string UserId { get; set; } = string.Empty;
+        public string UserId { get; set; } = string.Empty; // дані користувача 
         public string Name { get; set; } = string.Empty;
         public string Text { get; set; } = string.Empty;
         public string Photo { get; set; } = string.Empty;
@@ -28,7 +28,7 @@ namespace _5.WPF_Client
                 }
             }
             return msg;
-        }
+        } // з байтів в нашу структуру
 
         public byte[] Serialize()
         {
@@ -43,6 +43,6 @@ namespace _5.WPF_Client
                 }
                 return m.ToArray();
             }
-        }
+        } // і наоборт з структури в байти 
     }
 }
